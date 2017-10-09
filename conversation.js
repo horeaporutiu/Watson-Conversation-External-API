@@ -1,9 +1,10 @@
 var request = require('request');
 var http = require('http');
-var translationUsername="64a3ecc4-182b-47e9-a659-c580a7b5ca02"
-var translationPassword="AnnGIdp6kCU7"
-var conversationUserame = "441baeac-7b43-4fdc-90d1-dcc475f2d64e";
-var conversationPassword = "8Xgf2xWn4p8Q";
+var translationUsername= "your translation service username"
+var translationPassword="your translation service password"
+var conversationUserame = "your converstaion service username";
+var conversationPassword = "your converstaion service password";
+var conversationWorkspace = "your converstaion service workspace-id"
 var transUrl = 'https://gateway.watsonplatform.net/language-translator/api/v2/translate';
 var watson = require('watson-developer-cloud');
 
@@ -20,7 +21,7 @@ http.createServer(function(req,response) {
   var context = {};
   
   conversation.message({
-    workspace_id: 'be7a0f63-f34a-4b95-acda-f2fc61989fb1',
+    workspace_id: conversationWorkspace,
     input: {'text': 'translate this phrase.'},
     context: context
   },  function(err, response) {
