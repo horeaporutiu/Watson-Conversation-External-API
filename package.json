@@ -1,0 +1,17 @@
+{
+  "name": "watson-conversation-external-api-example",
+  "version": "1.0.0",
+  "description": "An example to help you call external APIs from Watson Conversation.",
+  "main": "conversation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node conversation.js"
+  },
+  "author": "Horea Porutiu",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0",
+    "request": "^2.83.0",
+    "watson-developer-cloud": "^2.41.1"
+  }
+}
