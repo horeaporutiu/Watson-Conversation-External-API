@@ -2,16 +2,16 @@ var request = require('request');
 var http = require('http');
 var translationUsername="64a3ecc4-182b-47e9-a659-c580a7b5ca02"
 var translationPassword="AnnGIdp6kCU7"
-var convoUser = "441baeac-7b43-4fdc-90d1-dcc475f2d64e";
-var convoPass = "8Xgf2xWn4p8Q";
+var conversationUserame = "441baeac-7b43-4fdc-90d1-dcc475f2d64e";
+var conversationPassword = "8Xgf2xWn4p8Q";
 var transUrl = 'https://gateway.watsonplatform.net/language-translator/api/v2/translate';
 var watson = require('watson-developer-cloud');
 
 http.createServer(function(req,response) {
 
   var conversation = watson.conversation({
-    username: convoUser,
-    password: convoPass,
+    username: conversationUserame,
+    password: conversationPassword,
     version: 'v1',
     version_date: '2017-05-26'
   });
@@ -28,10 +28,8 @@ http.createServer(function(req,response) {
       console.log('error:', err);
     else {
       console.log(response)
-
       if(response.intents.length > 0 && response.intents[0].intent === 'translate'){
         translate(response.input.text).then(function(translatedResopnse){
-          console.log(translatedResopnse)
           response.output.text = translatedResopnse
           console.log(JSON.stringify(response,null,2))        
         });
