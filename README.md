@@ -21,8 +21,3 @@ To get started:
 5) Run <b> 'npm install' </b>
 
 6) Run <b> 'npm start' </b>
-
-<b><h4 id="setup">Results</h4></b>
-
-Our console should look something like this if everything went smoothly. <img width="50%" height="50%"src="./watsonConsole.png">
-
