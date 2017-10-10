@@ -1,10 +1,10 @@
 # Watson-Conversation-External-API
 
-An example to help you get up and running with calling external APIs from Watson Conversation.
+This is an example to help get you up and running with calling external APIs from Watson Conversation.
 <br>
 I have an intent
 called 'translate' in the workspace I created, and when the user enters in a phrase and Watson recognizes the
-'translate' intent, I call Watson Conversation and output the translated text.
+'translate' intent, I call Watson Translate API to convert the text from english to spanish, then and output the translated text to Watson Conversation.
 
 <br>
 
