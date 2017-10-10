@@ -21,3 +21,5 @@ To get started:
 5) Run <b> 'npm install' </b>
 
 6) Run <b> 'npm start' </b>
+
+![Screenshot](watsonConsole.png)
