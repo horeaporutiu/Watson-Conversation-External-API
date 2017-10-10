@@ -22,4 +22,8 @@ To get started:
 
 6) Run <b> 'npm start' </b>
 
+
+<b><h4 id="setup">Results</h4></b>
+If you get everything working as shown above, your console should look something like below. Cheers!
+
 ![Screenshot](watsonConsole.png)
