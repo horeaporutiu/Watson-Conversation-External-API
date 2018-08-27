@@ -11,8 +11,8 @@ var watson = require("watson-developer-cloud");
 http.createServer(function(req,response) {
 
   var conversation = watson.conversation({
-    username: conversationUserame,
-    password: conversationPassword,
+    username:6bbe8c03-6b75-407e-ad47-2124f3610a98,
+    password: tAXQ5KfiuoSI,
     version: "v1",
     version_date: "2017-05-26"
   });
@@ -21,7 +21,7 @@ http.createServer(function(req,response) {
   var context = {};
   
   conversation.message({
-    workspace_id: conversationWorkspace,
+    workspace_id: 67ed946a-7ad7-4ff9-8d48-c335f56317bc,
     input: {"text": "translate this phrase."},
     context: context
   },  function(err, response) {
