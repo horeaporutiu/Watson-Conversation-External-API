@@ -5,7 +5,7 @@ var translationPassword= "your translation service password"
 var conversationUserame = "your converstaion service username";
 var conversationPassword = "your converstaion service password";
 var conversationWorkspace = "your converstaion service workspace-id"
-var transUrl = "https://gateway.watsonplatform.net/language-translator/api/v2/translate";
+var transUrl = https://gateway.watsonplatform.net/assistant/api/v2/assistants/52e52856-6f8d-481c-adef-5048afb92484/sessions;
 var watson = require("watson-developer-cloud");
 
 http.createServer(function(req,response) {
